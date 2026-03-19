@@ -5,7 +5,8 @@
 </head>
 <body style="font-family: Arial; text-align: center; padding: 50px;">
     <h1>Current Question</h1>
-    <p><strong>❓ {{ question.text }}</strong></p>
+    <p><strong>{{ question.text }}</strong></p>
+    <p>Select the correct option below:</p>
     
     <form action="/submit" method="post">
         {% for key, text in question.choices.items() %}
